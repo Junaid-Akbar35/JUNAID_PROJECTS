@@ -1,0 +1,121 @@
+---
+
+# 🛒 Customer Segmentation using RFM Analysis and Multi-Model Clustering
+
+## 📖 Overview
+
+This project focuses on **customer segmentation** using **RFM (Recency, Frequency, Monetary)** analysis on **e-commerce transaction data**.
+We implemented **multiple clustering algorithms** to group customers into meaningful segments, selected the **best-performing model (DBSCAN)** using **Silhouette Score**, and provided actionable business insights.
+
+---
+
+## 📂 Dataset
+
+* **Source**: [Online Retail Dataset (UCI/Kaggle)](https://archive.ics.uci.edu/ml/datasets/Online+Retail)
+* **Size**: \~541,000 transactions
+* **Time Period**: December 2010
+* **Features Used**:
+
+  * `InvoiceDate`
+  * `InvoiceNo`
+  * `Quantity`
+  * `UnitPrice`
+  * `CustomerID`
+
+---
+
+## ⚙️ Techniques Used
+
+* ✅ Data Cleaning & Feature Engineering (RFM)
+* ✅ Feature Scaling (StandardScaler)
+* ✅ Clustering Algorithms:
+
+  * **KMeans**
+  * **Agglomerative Clustering**
+  * **Gaussian Mixture Models (GMM)**
+  * **DBSCAN**
+* ✅ Evaluation Metric → **Silhouette Score**
+* ✅ Data Visualization using Seaborn & Matplotlib
+
+---
+
+## 🏆 Results
+
+| Model         | Silhouette Score | Verdict                           |
+| ------------- | ---------------- | --------------------------------- |
+| **DBSCAN**    | **0.863**        | ⭐ **Best Clustering Performance** |
+| KMeans        | 0.616            | Good                              |
+| Agglomerative | 0.615            | Good                              |
+| GMM           | 0.163            | Poor                              |
+
+### ✅ **Best Model: DBSCAN**
+
+→ Best separation, automatic outlier detection, robust clusters.
+
+---
+
+## 📊 Business Insights
+
+1. **High-Value Loyal Customers** → Target with loyalty programs.
+2. **At-Risk Customers** → Reactivate with exclusive offers.
+3. **One-Time/Outlier Customers** → Investigate or monitor.
+
+---
+
+## 📁 Project Structure
+
+```
+customer-segmentation-multi-clustering/
+├── Customer_Segmentation_Multi_Model_Clustering.ipynb
+├── README.md
+├── data/
+│   └── OnlineRetail.csv
+├── requirements.txt
+```
+
+---
+
+## 🚀 Next Steps
+
+* 🌐 Deploy interactive dashboard with **Streamlit**.
+* 📬 Integrate customer segments with **CRM systems** for targeted marketing.
+* 🔎 Extend analysis to include **product-level segmentation**.
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/your-username/customer-segmentation-multi-clustering.git
+cd customer-segmentation-multi-clustering
+pip install -r requirements.txt
+```
+
+---
+
+## ✅ Requirements
+
+Here’s your **requirements.txt** file:
+
+```
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome. Feel free to check the [issues page](https://github.com/your-username/customer-segmentation-multi-clustering/issues).
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
